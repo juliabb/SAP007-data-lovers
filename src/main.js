@@ -44,14 +44,14 @@ const speciesSelection = document.getElementById("filters-species");
 const alphabetical = document.getElementById("alphabetic-sequence");
 const statisticText = document.getElementById("statistics-infos");
 const nameCharacter = document.getElementById("filters-names");
-
+const clearButtons = document.getElementById("clear-all");
 ////////////////////////// escutador dos eventos(fofoqueiro)
 genderSelection.addEventListener("change", showGender);
 speciesSelection.addEventListener("change", showSpecies);
 alphabetical.addEventListener("change", showOrdem);
 statisticText.addEventListener("change", showStatistics);
 nameCharacter.addEventListener("keyup", nameCharacters);
-
+clearButtons.addEventListener("click", clearFilters);
 ///////////////////////FUNÇÕES
 /// por GÊNEROS///
 function showGender(e) {
