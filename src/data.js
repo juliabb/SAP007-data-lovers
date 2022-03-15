@@ -25,10 +25,11 @@ export const searchName = (data, condition) => {
 };
 //Filtro AZ/ZA
 export const orderResults = (data, orderScreen) => {
+  const newArr = [...data];
   if (orderScreen === "AZ") {
-    return data.sort((a, z) => (a.name > z.name ? 1 : -1));
+    return newArr.sort((a, z) => (a.name > z.name ? 1 : -1));
   } else {
-    return data.sort((a, z) => (a.name > z.name ? -1 : 1));
+    return newArr.sort((a, z) => (a.name > z.name ? -1 : 1));
   }
 };
 //porcentagem
