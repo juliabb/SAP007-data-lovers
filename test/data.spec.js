@@ -34,7 +34,7 @@ const sampleCharacters = [
 describe("filterGender", () => {
   it("It should be a function", () => {
     expect(typeof filterGender).toBe("function");
-  }); 
+  });
 
   it("It should filter female gender", () => {
     const expected = filterGender(sampleCharacters, "Female");
@@ -51,7 +51,7 @@ describe("filterGender", () => {
 describe("filterSpecies", () => {
   it("It should be a function", () => {
     expect(typeof filterSpecies).toBe("function");
-  }); 
+  });
 
   it("It should filter by animal species", () => {
     const expected = filterSpecies(sampleCharacters, "Animal");
@@ -106,7 +106,7 @@ describe("searchName", () => {
 describe("orderResults", () => {
   it("It should be a function", () => {
     expect(typeof orderResults).toBe("function");
-  }); 
+  });
 
   it("It should sort by AZ", () => {
     expect(orderResults(charactersNames, "AZ")).toStrictEqual(orderAZ);
