@@ -34,7 +34,7 @@ const sampleCharacters = [
 describe("filterGender", () => {
   it("It should be a function", () => {
     expect(typeof filterGender).toBe("function");
-  }); // mostrar o tipo
+  }); 
 
   it("It should filter female gender", () => {
     const expected = filterGender(sampleCharacters, "Female");
@@ -51,7 +51,7 @@ describe("filterGender", () => {
 describe("filterSpecies", () => {
   it("It should be a function", () => {
     expect(typeof filterSpecies).toBe("function");
-  }); // mostrar o tipo
+  }); 
 
   it("It should filter by animal species", () => {
     const expected = filterSpecies(sampleCharacters, "Animal");
@@ -95,7 +95,7 @@ const orderZA = [
 describe("searchName", () => {
   it("It should be a function", () => {
     expect(typeof searchName).toBe("function");
-  }); // mostrar o tipo
+  });
 
   it("It should filter by name", () => {
     const expected = searchName(charactersNames, "Hamster");
@@ -106,12 +106,12 @@ describe("searchName", () => {
 describe("orderResults", () => {
   it("It should be a function", () => {
     expect(typeof orderResults).toBe("function");
-  }); // mostrar o tipo
+  }); 
 
-  it("It should order AZ", () => {
+  it("It should sort by AZ", () => {
     expect(orderResults(charactersNames, "AZ")).toStrictEqual(orderAZ);
   });
-  it("It should order ZA", () => {
+  it("It should sort by ZA", () => {
     expect(orderResults(charactersNames, "ZA")).toStrictEqual(orderZA);
   });
 });
@@ -119,7 +119,7 @@ describe("orderResults", () => {
 describe("percentage", () => {
   it("It should be a function", () => {
     expect(typeof percentage).toBe("function");
-  }); // mostrar o tipo
+  });
 
   it("It should return 75% of males characters ", () => {
     const expected = percentage(sampleCharacters.length, 3);
