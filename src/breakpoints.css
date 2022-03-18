@@ -21,27 +21,13 @@
   .box-logo {
     width: 30em;
   }
-  .box-image img {
-    width: 42em;
-  }
   #card-information {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
-  .container-card {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
   .content-card {
-    position: relative;
-    height: 348px;
-    width: 250px;
-
-    perspective: 1000px;
+    margin: auto 3rem;
   }
   .content-card:hover .flip-card {
     transform: rotateY(180deg);
@@ -72,7 +58,6 @@
 
   .back-card {
     transform: rotateY(180deg);
-    perspective: -1000px;
     display: flex;
     align-items: center;
     width: 10rem;
@@ -86,6 +71,6 @@
   .more-info {
     display: flex;
     justify-content: end;
-    margin: 3em auto;
+    margin-top: 3em;
   }
 }

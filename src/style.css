@@ -29,16 +29,14 @@
 }
 
 .box {
-  display: flex;
-  justify-content: center;
   margin-bottom: 1rem;
 }
 
 .box-image img {
-  width: 80%;
   margin: auto;
   animation: anima;
   animation-duration: 800ms;
+  max-width: 80%;
 }
 
 @keyframes anima {
@@ -57,7 +55,6 @@
 }
 
 .box-cursor span {
-  display: inline-block;
   width: 20px;
   height: 20px;
   margin-right: 1px;
@@ -96,7 +93,6 @@
   font-size: 15px;
   padding: 0.5em 1.7em;
   letter-spacing: 0.06em;
-  position: relative;
   font-family: inherit;
   border-radius: 0.6em;
   overflow: hidden;
@@ -149,7 +145,6 @@
 
 .flip-card {
   background: var(--green-neon);
-  background-size: cover;
   width: 12rem;
   height: 20rem;
   --border-radius: 6px;
@@ -219,8 +214,10 @@
 }
 
 .image-card {
-  width: 10em;
+  width: 9em;
   margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 30%);
 }
 
 .back-card,
@@ -277,4 +274,8 @@
 
 .image-top {
   width: 4em;
+}
+
+.scroll-up {
+  text-align: center;
 }
