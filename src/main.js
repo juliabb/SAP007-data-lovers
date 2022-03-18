@@ -11,26 +11,26 @@ function showOnCards(data) {
     .map(
       (item) =>
         `   
-        <div class="container-card">
-    <article class="content-card">
-      <div class="flip-card">
-        <section class="front-card">
-          <img class="image-card" src="${item.image}" alt="Imagem dos personagens">
-          <div class="name text-card">${item.name}</div>
-          <p class="text-card more-info">Know more</p>
-        </section>
-        <section class="back-card">
-        <ul class="text-card">
-        <li>Status:${item.status}</li>
-        <li>Species:${item.species}</li>
-        <li>Origin:${item.origin.name}</li>
-        <li>Gender:${item.gender}</li>
-        <li>Episode:${item.episode.length}</li>
-        </ul>
-        </section>
-      </div>
-    </article>
-  </div>
+      <div class="container-card">
+        <article class="content-card">
+         <div class="flip-card">
+           <section class="front-card">
+            <img class="image-card" src="${item.image}" alt="Imagem dos  personagens">
+            <div class="name text-card">${item.name}</div>
+            <p class="text-card more-info">Know more</p>
+            </section>
+            <section class="back-card">
+            <ul class="text-card">
+              <li>Status:${item.status}</li>
+              <li>Species:${item.species}</li>
+              <li>Origin:${item.origin.name}</li>
+              <li>Gender:${item.gender}</li>
+              <li>Episode:${item.episode.length}</li>
+            </ul>
+            </section>
+           </div>
+        </article>
+       </div>
   `
     )
     .join("");

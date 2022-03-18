@@ -32,11 +32,11 @@ const sampleCharacters = [
 ];
 
 describe("filterGender", () => {
-  it("It should be a function", () => {
+  it("Should be a function", () => {
     expect(typeof filterGender).toBe("function");
   });
 
-  it("It should filter female gender", () => {
+  it("Should filter female gender", () => {
     const expected = filterGender(sampleCharacters, "Female");
     expect(expected).toEqual([
       {
@@ -49,11 +49,11 @@ describe("filterGender", () => {
 });
 
 describe("filterSpecies", () => {
-  it("It should be a function", () => {
+  it("Should be a function", () => {
     expect(typeof filterSpecies).toBe("function");
   });
 
-  it("It should filter by animal species", () => {
+  it("Should filter by animal species", () => {
     const expected = filterSpecies(sampleCharacters, "Animal");
     expect(expected).toEqual([
       {
@@ -83,7 +83,6 @@ const orderAZ = [
   { name: "Synthetic Laser Eels" },
 ];
 
-
 const orderZA = [
   { name: "Synthetic Laser Eels" },
   { name: "Rich Plutonian" },
@@ -94,35 +93,35 @@ const orderZA = [
 ];
 
 describe("searchName", () => {
-  it("It should be a function", () => {
+  it("Should be a function", () => {
     expect(typeof searchName).toBe("function");
   });
 
-  it("It should filter by name", () => {
+  it("Should filter by name", () => {
     const expected = searchName(charactersNames, "Hamster");
     expect(expected).toEqual([{ name: "Hamster In Butt" }]);
   });
 });
 
 describe("orderResults", () => {
-  it("It should be a function", () => {
+  it("Should be a function", () => {
     expect(typeof orderResults).toBe("function");
   });
 
-  it("It should sort by AZ", () => {
+  it("Should sort by AZ", () => {
     expect(orderResults(charactersNames, "AZ")).toStrictEqual(orderAZ);
   });
-  it("It should sort by ZA", () => {
+  it("Should sort by ZA", () => {
     expect(orderResults(charactersNames, "ZA")).toStrictEqual(orderZA);
   });
 });
 
 describe("percentage", () => {
-  it("It should be a function", () => {
+  it("Should be a function", () => {
     expect(typeof percentage).toBe("function");
   });
 
-  it("It should return 75% of males characters ", () => {
+  it("Should return 75% of males characters ", () => {
     const expected = percentage(sampleCharacters.length, 3);
     expect(expected).toEqual(75);
   });

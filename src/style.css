@@ -3,14 +3,12 @@
   src: url("font/shlop\ rg.ttf") format("truetype");
 }
 
-/* === RESET === */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* === VARIAVEIS === */
 :root {
   --body-font: "Share Tech", sans-serif;
   --green-neon: #5fe431;
@@ -19,29 +17,26 @@
   --green-menu: #1bfd9c;
 }
 
-/* === BACKGROUND INDEX === */
 .background {
   background: black;
   font-family: "Shlop", sans-serif;
 }
-/* === LOGO === */
+
 .box-logo {
   width: 12em;
   display: flex;
   margin: 0.5em auto;
 }
-/* === SLIDE === */
+
 .box {
-  display: flex;
-  justify-content: center;
   margin-bottom: 1rem;
 }
 
 .box-image img {
-  width: 80%;
   margin: auto;
   animation: anima;
   animation-duration: 800ms;
+  max-width: 80%;
 }
 
 @keyframes anima {
@@ -52,7 +47,6 @@
     transform: translate(0px, 00);
   }
 }
-/* === BOLINHAS DO SLIDE === */
 
 .box-cursor {
   justify-content: center;
@@ -61,7 +55,6 @@
 }
 
 .box-cursor span {
-  display: inline-block;
   width: 20px;
   height: 20px;
   margin-right: 1px;
@@ -74,7 +67,6 @@
   background-color: var(--green-neon);
 }
 
-/* === ESTATISTICAS === */
 .statistics {
   text-align: center;
   color: #85d97aa8;
@@ -89,7 +81,6 @@
   justify-content: center;
 }
 
-/* === FILTROS === */
 .filters-container {
   display: flex;
   align-items: center;
@@ -102,7 +93,6 @@
   font-size: 15px;
   padding: 0.5em 1.7em;
   letter-spacing: 0.06em;
-  position: relative;
   font-family: inherit;
   border-radius: 0.6em;
   overflow: hidden;
@@ -153,10 +143,8 @@
   background-color: black;
 }
 
-/* === CARDS === */
 .flip-card {
   background: var(--green-neon);
-  background-size: cover;
   width: 12rem;
   height: 20rem;
   --border-radius: 6px;
@@ -174,7 +162,6 @@
   margin: 1.3em auto 1em;
 }
 
-/* BORDA COLORIDA MOBILE E TABLET */
 .flip-card::after {
   --m-i: linear-gradient(#000, #000);
   --m-o: content-box, padding-box;
@@ -227,8 +214,10 @@
 }
 
 .image-card {
-  width: 10em;
+  width: 9em;
   margin: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 8px 0 rgb(0 0 0 / 30%);
 }
 
 .back-card,
@@ -238,8 +227,7 @@
   list-style-type: none;
 }
 
-/* === FOOTER === */
-#footer {
+.footer {
   background-color: var(--light-blue);
   opacity: 60%;
   font-size: large;
@@ -261,7 +249,7 @@
 .icons {
   width: 4rem;
 }
-/* === VOLTAR AO TOPO === */
+
 .back-to-top {
   position: fixed;
   right: -6px;
@@ -274,6 +262,8 @@
 
   transition: 0.3s;
   transform: translateY(100%);
+  color: var(--green-menu);
+  text-decoration: none;
 }
 
 .back-to-top.show {
@@ -284,4 +274,8 @@
 
 .image-top {
   width: 4em;
+}
+
+.scroll-up {
+  text-align: center;
 }
