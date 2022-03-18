@@ -1,4 +1,3 @@
-
 import {
   filterGender,
   filterSpecies,
@@ -18,15 +17,15 @@ function showOnCards(data) {
         <section class="front-card">
           <img class="image-card" src="${item.image}" alt="Imagem dos personagens">
           <div class="name text-card">${item.name}</div>
-          <p class="text-card more-info">Saiba mais</p>
+          <p class="text-card more-info">Know more</p>
         </section>
         <section class="back-card">
         <ul class="text-card">
         <li>Status:${item.status}</li>
-        <li>Espécie:${item.species}</li>
-        <li>Origem:${item.origin.name}</li>
-        <li>Gênero:${item.gender}</li>
-        <li>Episódios:${item.episode.length}</li>
+        <li>Species:${item.species}</li>
+        <li>Origin:${item.origin.name}</li>
+        <li>Gender:${item.gender}</li>
+        <li>Episode:${item.episode.length}</li>
         </ul>
         </section>
       </div>
@@ -62,7 +61,6 @@ function showGender(e) {
   return showOnCards(genderResults);
 }
 
-
 function showSpecies(e) {
   const resultSpecies = filterSpecies(data.results, e.target.value);
   const statisticSpecies = `${percentage(
@@ -83,33 +81,28 @@ function nameCharacters(e) {
   return showOnCards(characters);
 }
 
-
 function showStatistics(data) {
   statisticText.innerHTML = `Está porcentagem representa ${data} dos personagens`;
   statisticText.style.display = "flex";
 }
-
 
 function showOrdem(e) {
   const orderScreen = orderResults(data.results, e.target.value);
   return showOnCards(orderScreen);
 }
 
-
 function clearFilters() {
-  location.reload(); 
+  location.reload();
 }
-
 
 function backToTop() {
   if (window.scrollY >= 100) {
-    
     backToTopButton.classList.add("show");
   } else {
     backToTopButton.classList.remove("show");
   }
 }
-const backToTopButton = document.querySelector(".back-to-top"); 
+const backToTopButton = document.querySelector(".back-to-top");
 window.addEventListener("scroll", function () {
-  backToTop(); 
+  backToTop();
 });

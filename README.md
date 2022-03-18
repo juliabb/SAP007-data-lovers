@@ -147,6 +147,9 @@ Então depois disso fizemos o protótipo de alta fidelidade no
 ---
 
 ## 6. Teste de usabilidade
+ <p>Ao finalizarmos a aplicação compartilhamos o projeto com algumas pessoas que no geral deram um feedback positivo do site e também tivemos retorno de alguns problemas de usabilidade, como os cartões estarem em dois idiomas, o campo da pesquisa não estava bem claro que era só por nome, difícil de deixar o mouse no meio da tela (os cartões ficam virando) e demora pra carregar as fotos.</p>
+<p>O problema do idioma resolvemos deixando o site todo em inglês por causa do arquivo de dados que estão todos em inglês e a parte do campo de pesquisa deixamos mais explicativo.</p>
+
 
 ## 7. 💻 Linguagens e ferramentas utilizadas
 
