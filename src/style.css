@@ -3,14 +3,12 @@
   src: url("font/shlop\ rg.ttf") format("truetype");
 }
 
-/* === RESET === */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-/* === VARIAVEIS === */
 :root {
   --body-font: "Share Tech", sans-serif;
   --green-neon: #5fe431;
@@ -19,18 +17,17 @@
   --green-menu: #1bfd9c;
 }
 
-/* === BACKGROUND INDEX === */
 .background {
   background: black;
   font-family: "Shlop", sans-serif;
 }
-/* === LOGO === */
+
 .box-logo {
   width: 12em;
   display: flex;
   margin: 0.5em auto;
 }
-/* === SLIDE === */
+
 .box {
   display: flex;
   justify-content: center;
@@ -52,7 +49,6 @@
     transform: translate(0px, 00);
   }
 }
-/* === BOLINHAS DO SLIDE === */
 
 .box-cursor {
   justify-content: center;
@@ -74,7 +70,6 @@
   background-color: var(--green-neon);
 }
 
-/* === ESTATISTICAS === */
 .statistics {
   text-align: center;
   color: #85d97aa8;
@@ -89,7 +84,6 @@
   justify-content: center;
 }
 
-/* === FILTROS === */
 .filters-container {
   display: flex;
   align-items: center;
@@ -153,7 +147,6 @@
   background-color: black;
 }
 
-/* === CARDS === */
 .flip-card {
   background: var(--green-neon);
   background-size: cover;
@@ -174,7 +167,6 @@
   margin: 1.3em auto 1em;
 }
 
-/* BORDA COLORIDA MOBILE E TABLET */
 .flip-card::after {
   --m-i: linear-gradient(#000, #000);
   --m-o: content-box, padding-box;
@@ -238,8 +230,7 @@
   list-style-type: none;
 }
 
-/* === FOOTER === */
-#footer {
+.footer {
   background-color: var(--light-blue);
   opacity: 60%;
   font-size: large;
@@ -261,7 +252,7 @@
 .icons {
   width: 4rem;
 }
-/* === VOLTAR AO TOPO === */
+
 .back-to-top {
   position: fixed;
   right: -6px;
@@ -274,6 +265,8 @@
 
   transition: 0.3s;
   transform: translateY(100%);
+  color: var(--green-menu);
+  text-decoration: none;
 }
 
 .back-to-top.show {
